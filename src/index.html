@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-gray-100 text-black p-4 flex flex-col md:flex-row items-center justify-between">
+        <img class="h-12 w-auto" src="../img/logo1.png" alt="Logo">
+        <nav class="flex space-x-4 mt-3 md:mt-0">
+            <a class="font-semibold text-lg hover:text-teal-600 transition" href="#hero">Home</a>
+            <a class="font-semibold text-lg hover:text-teal-600 transition" href="#about">About</a>
+            <a class="font-semibold text-lg hover:text-teal-600 transition" href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div id="hero" class="py-8 px-4 bg-pink-100 text-center">
+        <h2 class="text-2xl sm:text-3xl font-medium font-serif mb-3">Books That Inspire, Gifts That Touch the Heart.
+        </h2>
+        <p class="text-sm sm:text-base font-light max-w-md mx-auto">Find Your Favorite Book And Hear Your Story Boldly
+            With Personalized Letters and Gifts.</p>
+        <img src="../img/logo.png" alt="Hero Image" class="w-48 sm:w-64 mx-auto mt-4">
+    </div>
+
+    <!-- About Section & Sidebar -->
+    <section id="about" class="p-4 grid grid-cols-1 md:grid-cols-5 gap-4">
+        <aside id="leftSideBar" class="bg-pink-200 p-5 rounded-xl">
+            <h3 class="text-xl font-semibold mb-3">Book by Genre</h3>
+            <ul class="space-y-2">
+                <li class="text-md font-mono">All Genres</li>
+                <li class="text-md font-mono">Business</li>
+                <li class="text-md font-mono">Science</li>
+                <li class="text-md font-mono">Fiction</li>
+                <li class="text-md font-mono">Philosophy</li>
+            </ul>
+        </aside>
+
+        <!-- Book Cards Grid -->
+        <div class="md:col-span-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <!-- Book Card -->
+            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition p-4">
+                <img class="w-full h-fit object-cover rounded-md" src="../img/art.jpg" alt="Book Cover">
+                <h3 class="text-xl font-semibold text-center mt-3">Book Title</h3>
+                <div class="text-center text-yellow-500 text-lg">★★★★☆</div>
+                <button class="mt-3 bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-md w-full">Buy Now</button>
+            </div>
+            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition p-4">
+                <img class="w-full h-fit object-cover rounded-md" src="../img/alchmist.jpg" alt="Book Cover">
+                <h3 class="text-xl font-semibold text-center mt-3">Book Title</h3>
+                <div class="text-center text-yellow-500 text-lg">★★★★☆</div>
+                <button class="mt-3 bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-md w-full">Buy Now</button>
+            </div>
+            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition p-4">
+                <img class="w-full h-fit object-cover rounded-md" src="../img/better.jpg" alt="Book Cover">
+                <h3 class="text-xl font-semibold text-center mt-3">Book Title</h3>
+                <div class="text-center text-yellow-500 text-lg">★★★★☆</div>
+                <button class="mt-3 bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-md w-full">Buy Now</button>
+            </div>
+            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition p-4">
+                <img class="w-full h-fit object-cover rounded-md" src="../img/atomic.jpg" alt="Book Cover">
+                <h3 class="text-xl font-semibold text-center mt-3">Book Title</h3>
+                <div class="text-center text-yellow-500 text-lg">★★★★☆</div>
+                <button class="mt-3 bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-md w-full">Buy Now</button>
+            </div>
+            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition p-4">
+                <img class="w-full h-fit object-cover rounded-md" src="../img/box.jpg" alt="Book Cover">
+                <h3 class="text-xl font-semibold text-center mt-3">Book Title</h3>
+                <div class="text-center text-yellow-500 text-lg">★★★★☆</div>
+                <button class="mt-3 bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-md w-full">Buy Now</button>
+            </div>
+            <!-- Repeat More Book Cards Here -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="p-6 bg-gray-200">
+        <div class="mb-10">
+            <p class="text-xl font-serif text-center">
+                This small startup has been a great success so far. We have reached out to many people and helped them
+                find the perfect book.
+                <br>
+                <br>
+                Fill out the form above to get in touch with us, and we will reach out to you.
+                <br>
+                <br>
+                You can order your book by filling out the contact form below or calling us directly. We provide the
+                best service for you, and your order will be delivered within 7 business days
+            </p>
+        </div>
+        <div class="max-w-4xl mx-auto bg-white p-6 rounded-2xl shadow-md">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-5">Contact Us</h2>
+            <form class="flex flex-col gap-5">
+                <input type="text" name="name" placeholder="Name" required class="p-3 rounded-lg border w-full">
+                <input type="email" name="email" placeholder="Email" required class="p-3 rounded-lg border w-full">
+                <input type="tel" name="phone" placeholder="Number" required class="p-3 rounded-lg border w-full">
+                <input type="text" name="bookName" placeholder="Book Name" required
+                    class="p-3 rounded-lg border w-full">
+                <textarea name="message" rows="3" placeholder="Message" required
+                    class="p-3 rounded-lg border w-full"></textarea>
+                <textarea name="address" rows="3" placeholder="Add Your Address" required
+                    class="p-3 rounded-lg border w-full"></textarea>
+                <button type="submit"
+                    class="bg-teal-500 hover:bg-teal-600 text-white py-3 rounded-lg w-full">SEND</button>
+            </form>
+        </div>
+    </section>
+    <footer class="bg-gray-900 text-white text-center p-4 mt-6">
+        <p>Contact us: <a href="mailto:soulboundstories0@gmail.com" class="underline">soulboundstories0@gmail.com</a> |
+            Mobile Number: 8369106435 | 9930743014</p>
+        <p>Founder: Swaksha</p>
+        <p>&copy; 2025 SoulboundStories</p>
+    </footer>
+</body>
+
+<script src="script.js"></script>
+
+</html>
